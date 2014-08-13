@@ -90,6 +90,7 @@ void multi_a_bT(std::vector< std::vector<double> >& a,
          std::vector< std::vector<double> >& b, std::vector< std::vector<double> >& c) {
     // matrix multiplication between a and b.T
     // given matrix a and b, calculate c = a * b.T, where b.T is the transpose of b
+    // The calculation is about 5 times slower than using Eigen library.
     const int na1 = a.size();
     const int na2 = a[0].size();
     const int nb2 = b.size();
